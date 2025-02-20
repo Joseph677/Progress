@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17%;
+}
+
+#main label {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 7vw;
+    margin-right: 6%;
+}
+
+#numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#numbers span {
+    flex: 1 0 auto
+}
+
+#numbers span:first-child {
+    padding-right: 5%;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#numbers span:last-child {
+    padding-left: 5%;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#progressContainer {
+    display: inline-block;
+    width: 70vw;
+    height: 8vw;
+    border: 1px solid #333333;
+    border-radius: 999px;
+}
+  
+#progress {
+    display: block;
+    height: 100%;
+    background-color: orange;
+    border-radius: 999px;
+}
