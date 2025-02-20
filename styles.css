@@ -53,11 +53,31 @@ html, body {
   
 #progress {
     display: block;
+    width:3%;
     height: 100%;
     background-color: orange;
     border-radius: 999px;
 }
 
+#progress strong {
+    color: black;
+    position: relative;
+    font-size: 2vw;
+    right: 20%;
+    animation-name: changecolor;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+}
+
 sub {
     font-size: 1.5vw;
+}
+
+@keyframes changecolor {
+    0% {color: black;}
+    75% {color: lightyellow}
+    100% {color: gold;}
 }
