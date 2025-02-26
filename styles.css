@@ -14,7 +14,7 @@ html, body {
 }
 
 #main label {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Luminari", fantasy;
     font-size: 4vw;
     margin-right: 6%;
 }
@@ -33,14 +33,14 @@ html, body {
     padding-right: 5%;
     font-size: 4vw;
     font-weight: bold;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Luminari", fantasy;
 }
 
 #numbers span:last-child {
     padding-left: 5%;
     font-size: 4vw;
     font-weight: bold;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Luminari", fantasy;
 }
 
 #progressContainer {
@@ -52,8 +52,10 @@ html, body {
 }
   
 #progress {
-    display: block;
-    width:3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:63%;
     height: 100%;
     background-color: orange;
     border-radius: 999px;
@@ -62,8 +64,7 @@ html, body {
 #progress strong {
     color: black;
     position: relative;
-    font-size: 2vw;
-    right: 20%;
+    font-size: 3vw;
     animation-name: changecolor;
     animation-duration: 4s;
     animation-delay: 3s;
