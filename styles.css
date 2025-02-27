@@ -55,10 +55,13 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:63%;
+    width:90%;
     height: 100%;
-    background-color: orange;
+    background: linear-gradient(45deg,#ff5733 20%,#ffbd33 40%, #75ff33 60%, #33ffbd 80%, #7d93eb 100%);
     border-radius: 999px;
+    animation-duration: 1s;
+    animation-name: rainbowprogress;
+    animation-iteration-count: infinite;
 }
 
 #progress strong {
@@ -77,8 +80,38 @@ sub {
     font-size: 1.5vw;
 }
 
+#progress strong sup {
+    display: inline-block;
+    background-image: linear-gradient(to top, #ed7129 20%, #fab551 70%);
+    background-clip: text;
+    color: transparent;    
+}
+
 @keyframes changecolor {
     0% {color: black;}
     75% {color: lightyellow}
     100% {color: gold;}
+}
+
+@keyframes rainbowprogress {
+    0% {background: linear-gradient(45deg, #ff5733 20%,#ffbd33 40%, #75ff33 60%, #33ffbd 80%, #7d93eb 100%)}
+    5% {background: linear-gradient(45deg, #7d93eb 5%, #ff5733 25%,#ffbd33 45%, #75ff33 65%, #33ffbd 85%, #7d93eb 105%)}
+    10% {background: linear-gradient(45deg, #7d93eb 10%, #ff5733 30%,#ffbd33 50%, #75ff33 70%, #33ffbd 90%, #7d93eb 110%)}
+    15% {background: linear-gradient(45deg, #7d93eb 15%, #ff5733 35%,#ffbd33 55%, #75ff33 75%, #33ffbd 95%, #7d93eb 115%)}
+    20% {background: linear-gradient(45deg, #7d93eb 20%, #ff5733 40%,#ffbd33 60%, #75ff33 80%, #33ffbd 100%)}
+    25% {background: linear-gradient(45deg, #33ffbd 5%, #7d93eb 25%, #ff5733 45%,#ffbd33 65%, #75ff33 85%, #33ffbd 105%)}
+    30% {background: linear-gradient(45deg, #33ffbd 10%, #7d93eb 30%, #ff5733 50%,#ffbd33 70%, #75ff33 90%, #33ffbd 110%)}
+    35% {background: linear-gradient(45deg, #33ffbd 15%, #7d93eb 35%, #ff5733 55%,#ffbd33 75%, #75ff33 95%, #33ffbd 115%)}
+    40% {background: linear-gradient(45deg, #33ffbd 20%, #7d93eb 40%, #ff5733 60%,#ffbd33 80%, #75ff33 100%)}
+    45% {background: linear-gradient(45deg, #75ff33 5%, #33ffbd 25%, #7d93eb 45%, #ff5733 65%,#ffbd33 85%, #75ff33 105%)}
+    50% {background: linear-gradient(45deg, #75ff33 10%, #33ffbd 30%, #7d93eb 50%, #ff5733 70%,#ffbd33 90%, #75ff33 110%)}
+    55% {background: linear-gradient(45deg, #75ff33 15%, #33ffbd 35%, #7d93eb 55%, #ff5733 75%,#ffbd33 95%, #75ff33 115%)}
+    60% {background: linear-gradient(45deg, #75ff33 20%, #33ffbd 40%, #7d93eb 60%, #ff5733 80%,#ffbd33 100%)}
+    65% {background: linear-gradient(45deg, #ffbd33 5%, #75ff33 25%, #33ffbd 45%, #7d93eb 65%,#ff5733 85%, #ffbd33 105%)}
+    70% {background: linear-gradient(45deg, #ffbd33 10%, #75ff33 30%, #33ffbd 50%, #7d93eb 70%,#ff5733 90%, #ffbd33 110%)}
+    75% {background: linear-gradient(45deg, #ffbd33 15%, #75ff33 35%, #33ffbd 55%, #7d93eb 75%,#ff5733 95%, #ffbd33 115%)}
+    80% {background: linear-gradient(45deg, #ffbd33 20%, #75ff33 40%, #33ffbd 60%, #7d93eb 80%,#ff5733 100%)}
+    85% {background: linear-gradient(45deg, #ff5733 5%, #ffbd33 25%, #75ff33 45%, #33ffbd 65%,#7d93eb 85%, #ff5733 105%)}
+    90% {background: linear-gradient(45deg, #ff5733 10%, #ffbd33 30%, #75ff33 50%, #33ffbd 70%,#7d93eb 90%, #ff5733 110%)}
+    95% {background: linear-gradient(45deg, #ff5733 15%, #ffbd33 35%, #75ff33 55%, #33ffbd 75%,#7d93eb 95%, #ff5733 115%)}
 }
