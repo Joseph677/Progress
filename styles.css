@@ -81,10 +81,10 @@ sub {
 }
 
 #progress strong sup {
-    display: inline-block;
+    display:inline-block;
     background-image: linear-gradient(to top, #ed7129 20%, #fab551 70%);
     background-clip: text;
-    color: transparent;    
+    color: transparent;
 }
 
 @keyframes changecolor {
@@ -114,4 +114,5 @@ sub {
     85% {background: linear-gradient(45deg, #ff5733 5%, #ffbd33 25%, #75ff33 45%, #33ffbd 65%,#7d93eb 85%, #ff5733 105%)}
     90% {background: linear-gradient(45deg, #ff5733 10%, #ffbd33 30%, #75ff33 50%, #33ffbd 70%,#7d93eb 90%, #ff5733 110%)}
     95% {background: linear-gradient(45deg, #ff5733 15%, #ffbd33 35%, #75ff33 55%, #33ffbd 75%,#7d93eb 95%, #ff5733 115%)}
+    100% {background: linear-gradient(45deg, #ff5733 18%, #ffbd33 38%, #75ff33 58%, #33ffbd 78%,#7d93eb 98%, #ff5733 118%)}
 }
