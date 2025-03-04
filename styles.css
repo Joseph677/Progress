@@ -1,3 +1,7 @@
+:root {
+    --clr-primary: #4d84c8;
+}
+
 html, body {
     margin: 0;
     height: 100%;
@@ -85,6 +89,103 @@ sub {
     background-image: linear-gradient(to top, #ed7129 20%, #fab551 70%);
     background-clip: text;
     color: transparent;
+}
+
+#credits {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 30vw;
+    height: 80vw;
+    margin-top: 10%;
+    margin-right: 5%;
+    border: 0.4rem outset #c24332;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 6rem 0.5rem yellow;
+    background-color: rgb(212, 214, 197);
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    animation-duration: 10s;
+    animation-name: wrap;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.names span {
+    padding-bottom: 50px;
+    font-family: "Luminari", fantasy;
+    font-size: 3vw;
+}
+
+#credit_header {
+    color: #f7cfc8;
+    font-size: calc( 1em + 2vmin );
+    letter-spacing: 0.2vw;
+    text-shadow: -6px -6px var(--clr-primary), -5px -5px var(--clr-primary),
+    -4px -4px var(--clr-primary), -3px -3px var(--clr-primary), -2px -2px var(--clr-primary),
+    -1px -1px var(--clr-primary), 1px 1px var(--clr-primary), 2px 2px var(--clr-primary),
+    3px 3px var(--clr-primary), 4px 4px var(--clr-primary), 5px 5px var(--clr-primary),
+    6px 6px var(--clr-primary), 7px 7px var(--clr-primary), 8px 8px var(--clr-primary),
+    9px 9px var(--clr-primary), 10px 10px var(--clr-primary), 11px 11px var(--clr-primary),
+    2px 2px var(--clr-primary), 3px 3px var(--clr-primary), 4px 4px var(--clr-primary),
+    5px 5px var(--clr-primary), 6px 6px var(--clr-primary), 7px 7px var(--clr-primary),
+    8px 8px var(--clr-primary), 9px 9px var(--clr-primary), 10px 10px var(--clr-primary),
+    11px 11px var(--clr-primary), 12px 12px var(--clr-primary), 13px 13px var(--clr-primary),
+    14px 14px var(--clr-primary), 15px 15px var(--clr-primary), 16px 16px var(--clr-primary),
+    17px 17px var(--clr-primary), 15px 15px var(--clr-primary), 18px 18px var(--clr-primary),
+    19px 19px var(--clr-primary), 10px 10px var(--clr-primary), 11px 11px var(--clr-primary),
+    12px 12px var(--clr-primary), 13px 13px var(--clr-primary), 14px 14px var(--clr-primary),
+    15px 15px var(--clr-primary), 16px 16px var(--clr-primary), 17px 17px var(--clr-primary),
+    18px 18px var(--clr-primary), 19px 19px var(--clr-primary), 20px 20px;
+}
+
+.names span:nth-child(even) {
+    /* color: midnightblue; */
+    font-size: calc( 1em + 2vmin );
+    font-weight: 900;
+    color: tomato;
+    font-weight: 50;
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
+    --stroke: 0.025em;
+    --background-color: white;
+    --stroke-color: lightblue;
+    
+    text-shadow: 
+      
+      var(--x-offset)
+      var(--y-offset)
+      0px
+      var(--background-color), 
+      
+      calc( var(--x-offset) - var(--stroke) )
+      calc( var(--y-offset) + var(--stroke) )
+      0px
+      var(--stroke-color);
+}
+
+.names span:nth-child(odd) {
+    font-size: calc( 1em + 2vmin );
+    color: rgb(155, 35, 30);
+    font-weight: 200;
+      text-shadow: 2px 2px 0px #eb452b, 
+                  5px 5px 0px #efa032, 
+                  7.5px 7.5px 0px #46b59b, 
+                  10px 10px 0px #017e7f, 
+                  12.5px 12.5px 0px #052939, 
+                  15px 15px 0px #c11a2b, 
+                  17.5px 17.5px 0px #c11a2b, 
+                  20px 20px 0px #c11a2b, 
+                  22.5px 22.5px 0px #c11a2b;
+}
+
+@keyframes wrap {
+    30% {margin-top: 200px;}
+    100% {margin-top: -500px;}
 }
 
 @keyframes changecolor {
